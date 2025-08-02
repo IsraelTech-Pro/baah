@@ -45,7 +45,7 @@ export default function Hero() {
       <div className="relative flex-1 flex items-center justify-center w-full max-w-xl z-10">
         {/* Figure Image */}
         <img
-          src="/profile.PNg"
+          src="/profile.png"
           alt="Baah Gyan Richmond portrait"
           className="w-full max-w-xs md:max-w-md h-auto object-contain relative z-10"
           style={{ background: 'none', border: 'none', boxShadow: 'none' }}
