@@ -36,10 +36,8 @@ export default function Navbar() {
             >
               {link.name}
               {router.pathname === link.href && (
-                <motion.span
+                <span
                   className="absolute left-0 -bottom-1 w-full h-0.5 bg-[#FFD700] rounded"
-                  layoutId="nav-underline"
-                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   style={{ opacity: 0.7 }}
                 />
               )}
