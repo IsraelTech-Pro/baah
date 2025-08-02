@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+  background: linear-gradient(135deg, #0A1E3A 60%, #1e293b 100%);
+}
+
+body {
+  @apply bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white dark:from-white dark:to-gray-200 dark:text-gray-900 transition-colors duration-500;
+  padding-top: 64px; /* Ensure content is always below the navbar */
+  min-height: 100vh;
+}
+
+/* Hide scrollbar utility */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
